@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use "@angular/material" as mat;
+@include mat.core();
+
+// Palettes.
+$primary-palette: (
+  50: #fddbe6,
+  100: #f8bfdf,
+  200: #f589a9,
+  300: #f7799f,
+  400: #f85989,
+  500: #ff3e79,
+  600: #be2c58,
+  700: #c71c4f,
+  800: #b40a3d,
+  900: #8d022c,
+  contrast:
+    (
+      50: rgba(black, 0.87),
+      100: rgba(black, 0.87),
+      200: rgba(black, 0.87),
+      300: rgba(black, 0.87),
+      400: rgba(black, 0.87),
+      500: rgba(black, 0.87),
+      600: white,
+      700: white,
+      800: white,
+      900: white,
+    ),
+);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link:hover{
+  transform: scale(1.1);
+  color: #ff3e79 !important;
+}

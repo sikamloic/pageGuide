@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="flex md:pl-10">
+  <div class="hidden md:block border-r-2 border-black pr-5 pt-5 space-y-3">
+    <div *ngFor = "let item of items" class="flex items-center justify-between w-64 cursor-pointer link focus:text-pink-500" routerLink="/{{item.to}}">
+      <a class="underline">{{item.title}}</a>
+      <mat-icon class="mat-18 text-pink-500" *ngIf="item.exist">arrow_downward</mat-icon>
+    </div>
+  </div>
+  <div class="md:pl-5 pt-5 text-gray-600">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<app-footer></app-footer>

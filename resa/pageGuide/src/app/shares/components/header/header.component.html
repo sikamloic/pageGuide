@@ -1,0 +1,42 @@
+<div class="">
+    <div class="hidden md:block">
+        <div class="flex justify-between items-center pl-10 pr-64 w-full py-2">
+            <div class="flex items-center space-x-3">
+                <div class="">
+                    <img src="assets/logo.svg" alt="" class="w-24">
+                </div>
+                <div class="text-pink-500 w-36" style="font-size: 20px; line-height: 20px;">Le Guide des coiffures des BFC (bouclé, frisés et crépus)</div>
+            </div>
+            <div>
+                <p class="text-center" style="font-size: 20px; line-height: 20px;">Tout savoir sur les cheveux texturés</p>
+                <p class="text-center" style="font-size: 20px; line-height: 20px;">(bouclé, frisés et crépus) et sur leurs coiffures</p>
+            </div>
+        </div>
+        <div class="border-t-4 border-pink-500"></div>
+    </div>
+    <div class="md:hidden">
+        <div class="border-t-4 border-pink-500 mt-2"></div>
+        <div class="flex items-end justify-between pr-5">
+            <div class="flex items-center space-x-3">
+                <div class="cursor-pointer" routerLink="/home">
+                    <img src="assets/logo.svg" alt="" class="w-24">
+                </div>
+                <div class="text-pink-500 w-36" style="font-size: 20px; line-height: 20px;">Le Guide des coiffures des BFC (bouclé, frisés et crépus)</div>
+            </div>
+            <button class="bg-pink-500 flex justify-center w-10 mb-1 rounded-sm" (click)="menu = !menu">
+                <mat-icon class="mat-18 text-white">menu</mat-icon>
+            </button>
+        </div>
+        <div class="border-t-4 border-pink-500"></div>
+        <div class="text-center my-5">
+            <div class="">Tout savoir sur les cheveux texturés</div>
+            <div class="">(bouclé, frisés et crépus) et sur leurs coiffures</div>
+        </div>
+        <div class="px-5 space-y-2 pt-2" *ngIf="menu">
+            <ul *ngFor = "let item of items" class="flex justify-between items-center" (click)="menu = false" routerLink="/{{item.to}}">
+                <li>{{item.title}}</li>
+                <mat-icon class="mat-18 text-pink-500" *ngIf="item.exist">arrow_downward</mat-icon>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -15,6 +15,10 @@ import { LemonadeBraidsComponent } from './pages/lemonade-braids/lemonade-braids
 import { KnotlessBraidsComponent } from './pages/knotless-braids/knotless-braids.component';
 import { CrochetsBraidsComponent } from './pages/crochets-braids/crochets-braids.component';
 import { FulaniBraidsComponent } from './pages/fulani-braids/fulani-braids.component';
+import { SenegalaiseTwistComponent } from './pages/senegalaise-twist/senegalaise-twist.component';
+import { CornrowsComponent } from './pages/cornrows/cornrows.component';
+import { FaussesLocksComponent } from './pages/fausses-locks/fausses-locks.component';
+import { BantuKnotsComponent } from './pages/bantu-knots/bantu-knots.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { FulaniBraidsComponent } from './pages/fulani-braids/fulani-braids.compo
     LemonadeBraidsComponent,
     KnotlessBraidsComponent,
     CrochetsBraidsComponent,
-    FulaniBraidsComponent
+    FulaniBraidsComponent,
+    SenegalaiseTwistComponent,
+    CornrowsComponent,
+    FaussesLocksComponent,
+    BantuKnotsComponent
   ],
   imports: [
     BrowserModule,

@@ -16,10 +16,10 @@ export class HeaderComponent implements OnInit {
     {exist: true, title: 'Comment faire des knotless braids', to: 'Comment-faire-des-knotless-braids'},
     {exist: true, title: 'Comment faire des crochets braids', to: 'Comment-faire-des-crochets-braids'},
     {exist: true, title: 'Comment faire des fulani braids', to: 'Comment-faire-des-fulani-braids'},
-    {exist: true, title: 'Comment faire des senegalese twist', to: ''},
-    {exist: true, title: 'Comment faire des cornrows', to: ''},
-    {exist: true, title: 'Comment faire des fausses locks', to: ''},
-    {exist: true, title: 'Comment faire des bantu knots', to: ''},
+    {exist: true, title: 'Comment faire des senegalese twist', to: 'Comment-faire-des-senegalese-twist'},
+    {exist: true, title: 'Comment faire des cornrows', to: 'Comment-faire-des-cornrows'},
+    {exist: true, title: 'Comment faire des fausses locks', to: 'Comment-faire-des-fausses-locks'},
+    {exist: true, title: 'Comment faire des bantu knots', to: 'Comment-faire-des-bantu-knots'},
   ]
   constructor() { }
 
